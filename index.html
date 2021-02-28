@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test</title>
+    </head>
+    <body>
+        <form>
+            <table>
+                <tr>
+                    <td>Select Video</td>
+                    <td>:</td>
+                    <td>
+                        <input type="file" accept="video/*"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <button type="submit">Get Info</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <script>
+            document.querySelector('form').addEventListener('submit', (event) => {
+                event.preventDefault();
+
+                const file = document.querySelector('input').files[0];
+                debugger
+            });
+        </script>
+    </body>
+</html>
